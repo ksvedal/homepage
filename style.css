@@ -42,19 +42,20 @@ h1 {
     font-size: 40px;
 	color: var(--opo-color);
 	font-weight: 700;
-    text-shadow: 2px 2px 0px var(--pop-color), 
-                4px 4px 0px var(--pop-color), 
-                6px 6px 0px var(--pop-color-fade), 
-                8px 8px 0px var(--pop-color-fade), 
-                10px 10px 0px var(--pop-color-fade), 
-                12px 12px 0px var(--primary-color), 
-                14px 14px 0px var(--primary-color), 
-                16px 16px 0px var(--primary-color), 
-                17px 18px 0px var(--primary-color);
+    text-shadow:2px 2px 0px var(--pop-color), 
+                3px 3px 0px var(--pop-color), 
+                4px 4px 0px var(--pop-color-fade), 
+                5px 5px 0px var(--pop-color-fade), 
+                6px 6px 0px var(--pop-color-fade);
 }
 
 h2 {
     padding-left: 20px;
+    color: var(--opo-color);
+	font-weight: 700;
+    text-shadow:2px 2px 0px var(--pop-color), 
+                3px 3px 0px var(--pop-color-fade), 
+                4px 4px 0px var(--pop-color-fade)
 }
   
 /* Mobile: */
@@ -65,13 +66,13 @@ h2 {
 }
   
 /* Full width: */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
     .col-1 { width: 8.33%; }
     .col-2 { width: 16.66%; }
     .col-3 { width: 25%; }
     .col-4 { width: 33.33%; }
     .col-5 { width: 41.66%; }
-    .col-6 { width: 50%; }
+    .col-6 { width: 60%; }
     .col-7 { width: 58.33%; }
     .col-8 { width: 66.66%; }
     .col-9 { width: 75%; }
@@ -111,6 +112,6 @@ h2 {
   
 .button:hover {
     background-color: var(--pop-color);
-    color: var(--text-color);
-    border: var(--border) var(--pop-color);
+    color: var(--opo-color);
+    border: var(--border) var(--pop-color-fade);
 }
