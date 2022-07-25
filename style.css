@@ -30,7 +30,7 @@ body {
     background-color: var(--primary-color); 
     color: var(--text-color); 
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
  
@@ -100,6 +100,8 @@ h2 {
 /* BUTTONS */
 .button {
     padding: 40px;
+    min-height: 120px;
+    max-height: 120px;
     outline: 0;
     cursor: pointer;
     color: var(--text-color);
@@ -118,5 +120,5 @@ h2 {
 .button:hover {
     background-color: var(--pop-color);
     color: var(--opo-color);
-    border: var(--border) var(--pop-color);
+    border: var(--border) var(--pop-color-fade);
 }
