@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #212121; 
+    --secondary-color: #1a1a1a;
+    --tertiary-color: #101010;
+    --text-color: #ededed;
+    --pop-color: #80cbc4;
+    --pop-color-fade: #fff8e3;
+    
+    /* Border Styling */
+    --border-radius: 6px;
+    --border: 1px solid;
+  
+    /* Content Space Styling */
+    --space: 12px;
+  }
+  
+  .dark-mode {
+    --primary-color: #e2e2e2;
+    --secondary-color: #eeeeee;
+    --tertiary-color: #cacaca;
+    --text-color: #333333;
+    --pop-color: #276B8F;
+    --pop-color-fade: #4f2f3f;
+  }
+  
+  body { 
+    margin: 0;
+    padding-bottom: 1%;
+    background-color: var(--primary-color); 
+    color: var(--text-color); 
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 11px; 
+  }
+  
+  .coloredtext {
+    color: var(--pop-color);
+    padding-top: 1px;
+    font-weight: bold;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Mobile: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  
+  /* Full width: */
+  @media only screen and (min-width: 600px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding-left: var(--space);
+  }
+  
+  .row {
+    margin-top: var(--space);
+    padding-right: var(--space);
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .header {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--primary-color);
+    padding: 3%;
+    text-align: center;
+  }
+  
+  .header2 {
+    padding-top: 0.1%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+
+  /* BUTTONS */
+  .button {
+    padding: 12px 20px 12px 20px;
+    outline: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    user-select: none;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-decoration: none;
+    object-fit: contain;
+  }
+  
+  .button:hover {
+    background-color: var(--pop-color);
+    border: var(--border) var(--tertiary-color);
+    color: var(--tertiary-color);
+    border-radius: var(--border-radius);
+  }
+
+ 
