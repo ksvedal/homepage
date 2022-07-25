@@ -8,7 +8,7 @@
     --opo-color: #fcedd8;
     
     /* Border Styling */
-    --border-radius: 1px;
+    --border-radius: 8px;
     --border: 2px solid;
   
     /* Content Space Styling */
@@ -26,10 +26,11 @@
   
 body { 
     margin: 0;
+    padding-bottom: 1%;
     background-color: var(--primary-color); 
     color: var(--text-color); 
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 20px; 
+    font-size: 18px;
     font-weight: bold;
 }
  
@@ -38,18 +39,21 @@ body {
 }
 
 h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
     text-align: center;
     font-size: 40px;
 	color: var(--opo-color);
 	font-weight: 700;
     text-shadow:2px 2px 0px var(--pop-color), 
-                3px 3px 0px var(--pop-color), 
-                4px 4px 0px var(--pop-color-fade), 
-                5px 5px 0px var(--pop-color-fade), 
-                6px 6px 0px var(--pop-color-fade);
-}
+                4px 4px 0px var(--pop-color), 
+                6px 6px 0px var(--pop-color-fade), 
+                8px 8px 0px var(--pop-color-fade),
+                10px 10px 0px var(--pop-color-fade);
+            }
 
 h2 {
+    padding-top: 5px;
     padding-left: 20px;
     color: var(--opo-color);
 	font-weight: 700;
@@ -95,7 +99,7 @@ h2 {
 
 /* BUTTONS */
 .button {
-    padding: 60px;
+    padding: 40px;
     outline: 0;
     cursor: pointer;
     color: var(--text-color);
@@ -108,10 +112,11 @@ h2 {
     border-radius: var(--border-radius);
     border: var(--border) var(--primary-color);
     text-align: center;
+    word-wrap: break-word;
 }
   
 .button:hover {
     background-color: var(--pop-color);
     color: var(--opo-color);
-    border: var(--border) var(--pop-color-fade);
+    border: var(--border) var(--pop-color);
 }
