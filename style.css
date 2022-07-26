@@ -1,27 +1,24 @@
 :root {
-    --primary-color: #e2e2e2;
-    --secondary-color: #eeeeee;
-    --tertiary-color: #cacaca;
-    --text-color: #333333;
-    --pop-color: #b63862;
-    --pop-color-fade: #4f2f3f;
-    --opo-color: #54cee9;
-    
-    /* Border Styling */
-    --border-radius: 100px;
-    --border: 6px solid;
-  
-    /* Content Space Styling */
-    --space: 6px;
-}
-  
-.dark-mode {
     --primary-color: #212121; 
     --secondary-color: #1a1a1a;
     --tertiary-color: #101010;
     --text-color: #ededed;
-    --pop-color: #80cbc4;
-    --pop-color-fade: #fff8e3;
+    --pop-color: #f6efa8;
+    
+    /* Border Styling */
+    --border-radius: 0px;
+    --border: 3px solid;
+  
+    /* Content Space Styling */
+    --space: 2px;
+}
+  
+.dark-mode {
+    --primary-color: #e2e2e2;
+    --secondary-color: #eeeeee;
+    --tertiary-color: #cacaca;
+    --text-color: #333333;
+    --pop-color: #3879b6;
 }
   
 body { 
@@ -43,23 +40,15 @@ h1 {
     margin-bottom: 0;
     text-align: center;
     font-size: 40px;
-	color: var(--opo-color);
+	color: var(--text-color);
 	font-weight: 700;
-    text-shadow:2px 2px 0px var(--pop-color), 
-                4px 4px 0px var(--pop-color), 
-                6px 6px 0px var(--pop-color-fade), 
-                8px 8px 0px var(--pop-color-fade),
-                10px 10px 0px var(--pop-color-fade);
-            }
+}
 
 h2 {
     padding-top: 5px;
     padding-left: 20px;
-    color: var(--opo-color);
+    color: var(--text-color);
 	font-weight: 700;
-    text-shadow:2px 2px 0px var(--pop-color), 
-                3px 3px 0px var(--pop-color-fade), 
-                4px 4px 0px var(--pop-color-fade)
 }
   
 /* Mobile: */
@@ -100,9 +89,6 @@ h2 {
 
 /* BUTTONS */
 .button {
-    padding: 40px;
-    min-height: 120px;
-    max-height: 120px;
     outline: 0;
     cursor: pointer;
     color: var(--text-color);
@@ -114,12 +100,14 @@ h2 {
     text-decoration: none;
     border-radius: var(--border-radius);
     border: var(--border) var(--primary-color);
-    text-align: center;
     word-wrap: break-word;
+    padding: 20px;
+    min-height: 100px;
+    max-height: 100px;
 }
   
 .button:hover {
     background-color: var(--pop-color);
-    color: var(--opo-color);
+    color: var(--primary-color);
     border: var(--border) var(--pop-color);
 }
