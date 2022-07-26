@@ -5,14 +5,14 @@
     --text-color: #333333;
     --pop-color: #b63862;
     --pop-color-fade: #4f2f3f;
-    --opo-color: #fcedd8;
+    --opo-color: #54cee9;
     
     /* Border Styling */
-    --border-radius: 8px;
-    --border: 2px solid;
+    --border-radius: 100px;
+    --border: 6px solid;
   
     /* Content Space Styling */
-    --space: 1px;
+    --space: 6px;
 }
   
 .dark-mode {
@@ -66,7 +66,8 @@ h2 {
 [class*="col-"] {
     width: 100%;
     float: left;
-    padding: var(--space);
+    padding-left: var(--space);
+    padding-bottom: var(--space)
 }
   
 /* Full width: */
@@ -120,5 +121,5 @@ h2 {
 .button:hover {
     background-color: var(--pop-color);
     color: var(--opo-color);
-    border: var(--border) var(--pop-color-fade);
+    border: var(--border) var(--pop-color);
 }
