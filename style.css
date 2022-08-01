@@ -3,8 +3,8 @@
     --secondary-color: #eeeeee;
     --tertiary-color: #cacaca;
     --text-color: #333333;
-    --pop-color-1: #126e65;
-    --pop-color-2: #873d64;
+    --pop-color-1: #3899b1;
+    --pop-color-2: #a04274;
     
     /* Border Styling */
     --border-radius: 8px;
@@ -15,7 +15,8 @@
 }
   
 body { 
-    margin: 0;
+    margin-right: 1%;
+    margin-left: 1%;
     padding-bottom: 4%;
     padding-top: 4%;
     background-color: var(--primary-color); 
@@ -113,6 +114,10 @@ i {
     .col-10 { width: 83.33%; }
     .col-11 { width: 91.66%; }
     .col-12 { width: 100%; }
+
+    body {
+        margin: 0;
+    }
 
     h1 { font-size: 60px; }
 
